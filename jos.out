@@ -1,0 +1,29 @@
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
++ cc kern/init.c
++ ld obj/kern/kernel
+ld: warning: section `.bss' type changed to PROGBITS
++ mk obj/kern/kernel.img
+6828 decimal is XXX octal!
+Physical memory: 66556K available, base = 640K, extended = 65532K
+check_page_free_list done
+check_page_alloc() succeeded!
+so far so good
+pp2 f0184fe8
+kern_pgdir f0182000
+kern_pgdir[0] is 3ff007
+check_page() succeeded!
+check_kern_pgdir() succeeded!
+check_page_free_list done
+check_page_installed_pgdir() succeeded!
+envs: f01a4000, e: f01a4000, e->env_id: 1000
+env_id, 1000
+[00000000] new env 00001000
+Incoming TRAP frame at 0xefffffbc
+Incoming TRAP frame at 0xefffffbc
+[00001000] user_mem_check assertion failure for va f010000c
+[00001000] free env 00001000
+Destroyed the only environment - nothing more to do!
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.
+qemu: terminating on signal 15 from pid 171425
